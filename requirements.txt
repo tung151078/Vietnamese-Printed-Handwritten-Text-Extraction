@@ -1,8 +1,10 @@
-RUN -m pip install --upgrade pip
 opencv-python
 numpy
-matplotlib
+re
+matplotlib.pyplot
 vietocr
 pdf2image
 vietnam_number
 pandas
+fnmatch
+numpy.lib.function_base
