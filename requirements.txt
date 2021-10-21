@@ -1,6 +1,5 @@
 opencv-python
 numpy
-re
 matplotlib.pyplot
 vietocr
 pdf2image
