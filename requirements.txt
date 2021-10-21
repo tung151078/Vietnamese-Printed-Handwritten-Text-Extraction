@@ -9,4 +9,3 @@ streamlit
 scikit-learn
 torchvision
 torch
-yaml
