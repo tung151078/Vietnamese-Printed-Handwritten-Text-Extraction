@@ -12,7 +12,7 @@ Thư viện sử dụng:
 - matplotlib , numpy, streamlit …
 
 Trước khi chạy file main.py, chạy file regionselector.py để lựa chọn vùng muốn trích xuất.
-Khi chạy file, form mẫu sẽ sẽ hiển thị. Chọn vùng muốn trích xuất:ở đây sẽ chọn vùng bằng cách click chuột vào tọa độ phía trên bên trái, sau đó click vào tọa độ phía góc dưới bên phải của vùng muốn lựa chọn.  nhập vào đây là text hay ô textbox: nếu là trên form là text thì nhập là ‘text’, nếu là ô checkbox thì nhập là ‘box’. Ví dụ như bên dưới:
+Khi chạy file, form mẫu sẽ sẽ hiển thị. Chọn vùng muốn trích xuất: ở đây sẽ chọn vùng bằng cách click chuột vào tọa độ phía trên bên trái, sau đó click vào tọa độ phía góc dưới bên phải của vùng muốn lựa chọn. Nhập vào đây là 'text' hay ô 'checkbox': nếu là trên form là text thì nhập là ‘text’, nếu là ô 'checkbox' thì nhập là ‘box’. Ví dụ như bên dưới:
 
 '''
 - Enter Type text
