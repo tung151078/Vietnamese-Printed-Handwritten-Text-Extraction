@@ -4,7 +4,6 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import fnmatch
-import os
 from numpy.lib.function_base import append
 from re import match
 from PIL import Image
