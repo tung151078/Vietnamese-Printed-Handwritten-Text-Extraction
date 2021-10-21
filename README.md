@@ -21,6 +21,7 @@ Khi chạy file, form mẫu sẽ sẽ hiển thị. Chọn vùng muốn trích x
 - Enter Name dia_chi
     
 [[(232, 208), (747, 242), 'text', 'ten'], [(120, 240), (746, 271), 'text', 'dia_chi']]
+
 '''
 
 Copy dòng cuối cho vào biến ‘roi’ trong main.py. Những tọa độ đó sẽ được sử dụng để cắt ra đưa vào model để predict.
