@@ -1,4 +1,5 @@
-opencv2
+RUN -m pip install --upgrade pip
+opencv-python
 numpy
 matplotlib
 vietocr
