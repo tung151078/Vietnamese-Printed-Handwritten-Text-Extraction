@@ -15,10 +15,10 @@ Trước khi chạy file main.py, chạy file regionselector.py để lựa ch�
 Khi chạy file, form mẫu sẽ sẽ hiển thị. Chọn vùng muốn trích xuất:ở đây sẽ chọn vùng bằng cách click chuột vào tọa độ phía trên bên trái, sau đó click vào tọa độ phía góc dưới bên phải của vùng muốn lựa chọn.  nhập vào đây là text hay ô textbox: nếu là trên form là text thì nhập là ‘text’, nếu là ô checkbox thì nhập là ‘box’. Ví dụ như bên dưới:
 
 '''
-Enter Type text
-Enter Name ten
-Enter Type text
-Enter Name dia_chi
+- Enter Type text
+- Enter Name ten
+- Enter Type text
+- Enter Name dia_chi
     
 [[(232, 208), (747, 242), 'text', 'ten'], [(120, 240), (746, 271), 'text', 'dia_chi']]
 '''
