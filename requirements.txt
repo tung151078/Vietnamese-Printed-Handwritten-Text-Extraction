@@ -5,3 +5,4 @@ re
 vietocr
 pdf2image
 vietnam_number
+pandas
