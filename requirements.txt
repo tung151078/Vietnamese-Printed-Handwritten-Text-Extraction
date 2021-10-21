@@ -1,4 +1,4 @@
-opencv-python
+opencv2
 numpy
 matplotlib
 vietocr
