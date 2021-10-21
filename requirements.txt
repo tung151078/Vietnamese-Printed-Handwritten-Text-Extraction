@@ -9,5 +9,5 @@ streamlit
 scikit-learn
 torchvision
 torch
-vietocr.tool.predictor
-vietocr.tool.config
+vietocr-tool-predictor
+vietocr-tool-config
