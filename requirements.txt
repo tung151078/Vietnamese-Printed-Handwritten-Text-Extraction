@@ -7,5 +7,5 @@ vietnam_number
 pandas
 streamlit
 scikit-learn
-pytorch
 torchvision
+torch
