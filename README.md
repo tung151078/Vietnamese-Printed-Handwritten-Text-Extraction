@@ -6,7 +6,8 @@ Bao gồm các file:
 - dataoutput.csv: lưu data
 
 Thư viện sử dụng:
-- vietocr : Model của vietOCR được sử dụng để predict chữ viết tiếng Việt.
+- vietocr : Model của vietOCR được sử dụng để predict chữ viết tiếng Việt. 
+    Tải file weight: https://drive.google.com/drive/folders/1Qm-53hxBHgWidle2QttpVaYNKK3cQphK?usp=sharing
 - vietnam_number: sử dụng để chuyển đổi tiền từ chữ sang số và ngược lại.
 - pdf2image: sử dụng để chuyển đổi file từ ‘.pdf’ sang ‘.png’
 - matplotlib , numpy, streamlit …
@@ -25,3 +26,5 @@ Khi chạy file, form mẫu sẽ sẽ hiển thị. Chọn vùng muốn trích x
 '''
 
 Copy dòng cuối cho vào biến ‘roi’ trong main.py. Những tọa độ đó sẽ được sử dụng để cắt ra đưa vào model để predict.
+
+Xem chi tiết tại đây: https://hackmd.io/@tung1510/SkJYyGoHt
