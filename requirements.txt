@@ -1,0 +1,7 @@
+opencv-python
+numpy
+matplotlib
+re
+vietocr
+pdf2image
+vietnam_number
