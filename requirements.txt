@@ -1,4 +1,4 @@
-opencv-python-headless
+opencv-python
 numpy
 matplotlib
 vietocr
@@ -9,5 +9,3 @@ streamlit
 scikit-learn
 torchvision
 torch
-vietocr-tool-predictor
-vietocr-tool-config
