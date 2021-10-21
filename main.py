@@ -12,7 +12,7 @@ from vietocr.tool.predictor import Predictor
 from vietocr.tool.config import Cfg
 from pdf2image import convert_from_path
 from vietnam_number import w2n, n2w
-from utils import *
+
 
 roi = [[(343, 180), (376, 205), 'text', 'ngay'], 
         [(419, 184), (448, 206), 'text', 'thang'], 
@@ -28,6 +28,22 @@ per = 25
 pixelThreshold = 500
 max_feature = 5000
 path = 'samples'
+
+def pre_processing(image):
+    image_gray = cv2.cvtColor(np.asarray(image), cv2.COLOR_BGR2GRAY)
+    image_blur = cv2.GaussianBlur(image_gray, (9, 9), 1)
+    th1 = cv2.adaptiveThreshold(image_blur,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY,11,2)
+
+    kernel = np.ones((1, 1), np.uint8)
+    opening = cv2.morphologyEx(th1, cv2.MORPH_OPEN, kernel)
+    closing = cv2.morphologyEx(opening, cv2.MORPH_CLOSE, kernel)
+    
+    ret1, th2 = cv2.threshold(image_gray, 157, 255, cv2.THRESH_BINARY)
+    ret2, th3 = cv2.threshold(th2, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+    blur = cv2.GaussianBlur(th3, (9,9),1)
+    ret3, th4 = cv2.threshold(blur, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+    or_image = cv2.bitwise_or(th4, closing)
+    return or_image
 
 #========== Config to use model vietocr ==========
 config = Cfg.load_config_from_name('vgg_transformer')
